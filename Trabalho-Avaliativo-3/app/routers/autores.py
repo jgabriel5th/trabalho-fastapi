@@ -12,6 +12,10 @@ router = APIRouter(prefix="/autores", tags=["Autores"])
     "/", response_model=AutorResponse, status_code=status.HTTP_201_CREATED
 )
 def criar_autor(autor: AutorCreate, db: Session = Depends(get_db)):
+  """
+    Endpoint responsável por cadastrar um novo autor no banco de dados.
+    Realiza validação dos campos obrigatórios e persiste a entidade.
+    """
   novo_autor = AutorModel(**autor.model_dump())
   db.add(novo_autor)
   db.commit()
