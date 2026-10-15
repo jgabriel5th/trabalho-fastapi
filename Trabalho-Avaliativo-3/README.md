@@ -128,3 +128,11 @@ Abra o seu navegador e acesse a interface interativa do Swagger para testar todo
 
 
 * `DELETE /livros/{id}` - Remove um livro do sistema
+
+## 👥 Integrantes do Grupo
+- Danilo Silva Brito (01849357)
+- Guilherme Monteiro Duarte (01839267)
+- João Gabriel de Menesses e Silva (01857251)
+- Kueren Hazlen dos Santos Oliveira (01802014)
+- Paulo Vinicius de Sousa Araújo (01690237)
+- Willian Cavalcante Santos (01785440)
