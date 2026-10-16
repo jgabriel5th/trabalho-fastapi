@@ -7,6 +7,8 @@ from sqlalchemy.orm import Session
 
 router = APIRouter(prefix="/livros", tags=["Livros"])
 
+# Validação de integridade referencial: Garante que o livro 
+# só será cadastrado se o autor correspondente realmente existir no banco.
 
 @router.post(
     "/", response_model=LivroResponse, status_code=status.HTTP_201_CREATED
