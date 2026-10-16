@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 
 class AutorCreate(BaseModel):
-"""Schema base contendo os atributos comuns para Autores."""
+  """Schema base contendo os atributos comuns para Autores."""
   nome: str
   nacionalidade: Optional[str] = None
 
@@ -23,7 +23,7 @@ class AutorResponse(BaseModel):
 
 
 class LivroCreate(BaseModel):
-"""Schema base contendo os atributos essenciais para Livros."""
+  """Schema base contendo os atributos essenciais para Livros."""
   titulo: str
   ano_publicacao: int
   paginas: Optional[int] = None
